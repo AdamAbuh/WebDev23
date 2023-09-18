@@ -1,0 +1,4 @@
+# HW Week 2
+
+## Article Reaction
+The article "Five Important Considerations for Wireframing" emphasizes the significance of wireframing in user experience design and provides valuable insights for UX architects. It highlights the importance of clarifying the problem, sketching workflows, seeking early feedback, mastering design tools, and tailoring wireframes to the audience. These considerations underscore the collaborative nature of UX work and the need for effective communication throughout the design process. Overall, it offers practical advice for UX designers looking to create efficient and impactful wireframes.
