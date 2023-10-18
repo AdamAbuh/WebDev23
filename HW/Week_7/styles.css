@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Added to align logo to the left and links to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Display the navigation links as a horizontal list */
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    padding: 31px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Change the link color on hover */
+}
+
+/* Style the logo in the navbar */
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.about {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.featured {
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.review-button, .synopsis-button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.review-button:hover, .synopsis-button:hover {
+    background-color: #ff6600; /* Change the background color on hover */
+    color: #333; /* Change the text color on hover */
+}
+
+/* Add hover effect for items */
+.item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Enlarge the item on hover */
+}
+
+img {
+    width: 100%; /* Use 100% width to make images responsive */
+    height: auto;
+}
+
+.infoModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .infoModal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .infoModal > div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .close {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s ease;
+    line-height: 20px;
+  }
+
+  .close:hover {
+    background-color: black;
+    color: white;
+  }
